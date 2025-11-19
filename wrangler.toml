@@ -1,0 +1,11 @@
+name = "workers-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Optionally, you can configure workers limits
+# [limits]
+# cpu_ms = 50
+
+# Optionally, you can add environment variables
+# [vars]
+# ENVIRONMENT = "production"

@@ -1,0 +1,23 @@
+{
+    "name": "workers-proxy",
+    "version": "1.0.0",
+    "description": "A serverless proxy running on Cloudflare Workers",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "wrangler dev",
+        "deploy": "wrangler deploy",
+        "test": "wrangler dev --local"
+    },
+    "keywords": [
+        "cloudflare",
+        "workers",
+        "proxy",
+        "serverless"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20241127.0",
+        "wrangler": "^3.94.0"
+    }
+}
