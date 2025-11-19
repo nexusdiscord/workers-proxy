@@ -47,31 +47,53 @@ fetch('https://your-worker.workers.dev/https://api.example.com/data')
 
 ## Installation & Deployment
 
-### Prerequisites
+### ⚡ Quick Deploy (Copy-Paste Method) - Recommended
+
+This is the easiest way to deploy! No installation required.
+
+**Step 1:** Go to [Cloudflare Workers Dashboard](https://dash.cloudflare.com/)
+
+**Step 2:** Click "Create a Service" or "Create Worker"
+
+**Step 3:** Give your worker a name (e.g., `my-proxy`)
+
+**Step 4:** Copy the entire content of `worker.js` file
+
+**Step 5:** Paste it into the Cloudflare Workers editor (replace all existing code)
+
+**Step 6:** Click "Save and Deploy"
+
+**Done!** Your proxy is now live at `https://your-worker-name.workers.dev` 🎉
+
+### 🛠️ Alternative: Deploy via CLI (Advanced)
+
+If you prefer using the command line:
+
+#### Prerequisites
 
 - Node.js (v16 or later)
 - A Cloudflare account
 - Wrangler CLI
 
-### Step 1: Install Dependencies
+#### Step 1: Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Step 2: Login to Cloudflare
+#### Step 2: Login to Cloudflare
 
 ```bash
 npx wrangler login
 ```
 
-### Step 3: Deploy to Cloudflare Workers
+#### Step 3: Deploy to Cloudflare Workers
 
 ```bash
 npm run deploy
 ```
 
-### Step 4: Test Locally (Optional)
+#### Step 4: Test Locally (Optional)
 
 Before deploying, you can test the worker locally:
 
